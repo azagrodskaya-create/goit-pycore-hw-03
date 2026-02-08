@@ -1,6 +1,8 @@
 from datetime import datetime
+from typing import Optional
 
-def get_days_from_today(date_string):
+
+def get_days_from_today(date_string: str) -> Optional[int]:
     """
     Розраховує кількість днів між заданою датою та поточною датою.
     
@@ -25,6 +27,8 @@ def get_days_from_today(date_string):
     except ValueError:
         print(f"Помилка: '{date_string}' не відповідає формату РРРР-ММ-ДД.")
         return None
+    
+
 
 # Приклади використання
 if __name__ == "__main__":

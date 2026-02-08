@@ -1,5 +1,9 @@
 from datetime import datetime, timedelta
-def get_upcoming_birthdays(users):
+from typing import List, Dict
+
+
+
+def get_upcoming_birthdays(users: List[Dict[str, str]]) -> List[Dict[str, str]]:
     """
     Повертає список користувачів, у яких день народження наступає протягом наступних 7 днів.
     
@@ -43,10 +47,12 @@ def get_upcoming_birthdays(users):
 
     return upcoming_birthdays
 
-# Приклад використання
-users = [
-    {"name": "John Doe", "birthday": "1985.01.23"},
-    {"name": "Jane Smith", "birthday": "1990.02.12"}
-]
-print("Список привітань на цьому тижні:", get_upcoming_birthdays(users))
 
+# Приклад використання
+if __name__ == "__main__":
+    users = [
+        {"name": "John Doe", "birthday": "1985.01.23"},
+        {"name": "Jane Smith", "birthday": "1990.02.12"}
+    ]
+    print("Список привітань...", get_upcoming_birthdays(users))
+        
