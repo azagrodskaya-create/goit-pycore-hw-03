@@ -1,5 +1,4 @@
 import random
-from typing import List
 
 
 def get_numbers_ticket(min_val: int, max_val: int, quantity: int) -> List[int]:

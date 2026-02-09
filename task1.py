@@ -1,5 +1,4 @@
 from datetime import datetime
-from typing import Optional
 
 
 def get_days_from_today(date_string: str) -> Optional[int]:
@@ -29,8 +28,6 @@ def get_days_from_today(date_string: str) -> Optional[int]:
         return None
     
 
-
-# Приклади використання
 if __name__ == "__main__":
     # Тест із завдання
     print(f"Результат для 2020-10-09: {get_days_from_today('2020-10-09')}")

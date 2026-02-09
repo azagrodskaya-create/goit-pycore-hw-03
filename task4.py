@@ -1,6 +1,4 @@
 from datetime import datetime, timedelta
-from typing import List, Dict
-
 
 
 def get_upcoming_birthdays(users: List[Dict[str, str]]) -> List[Dict[str, str]]:
